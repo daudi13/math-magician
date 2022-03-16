@@ -1,6 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Calculator extends React.PureComponent {
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount = () => {
+    this.setState({
+      total: null,
+      next: null,
+      operation: null,
+    });
+  }
+
   render() {
     return (
       <div className="calc-grid">
