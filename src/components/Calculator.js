@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends Component {
   constructor(props) {
@@ -12,6 +13,23 @@ class Calculator extends Component {
       next: null,
       operation: null,
     });
+  }
+
+  doMathOperations = ({ currentTarget: btn }) => {
+    try {
+      const buttonName = btn.outerText === '' ? btn.id : btn.outerText;
+      const object = calculate(this.state, buttonName);
+      this.setState(object);
+    } catch (error) {
+      const buttonName = btn.outerText === '' ? btn.id : btn.outerText;
+      const { next } = this.state;
+
+      if (next) {
+        this.setState({ total: next, next: null });
+      }
+
+      this.setState({ operation: buttonName });
+    }
   }
 
   render() {
