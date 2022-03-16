@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
+class Calculator extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {};
