@@ -1,66 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import Buttons from './ButtonInfo';
 
-class Calculator extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  componentDidMount = () => {
-    this.setState({
-      total: null,
-      next: null,
-      operation: null,
-    });
-  }
-
-  doMathOperations = ({ currentTarget: btn }) => {
+  const doMathOperations = ({ currentTarget: btn }) => {
+    const buttonName = btn.outerText;
     try {
-      const buttonName = btn.outerText === '' ? btn.id : btn.outerText;
-      const object = calculate(this.state, buttonName);
-      this.setState(object);
+      const object = calculate(state, buttonName);
+      setState({ ...object, ...state });
     } catch (error) {
-      const buttonName = btn.outerText === '' ? btn.id : btn.outerText;
-      const { next } = this.state;
+      const { next } = state;
 
       if (next) {
-        this.setState({ total: next, next: null });
+        setState({ ...state, total: next, next: null });
       }
 
-      this.setState({ operation: buttonName });
+      setState({ operation: buttonName });
     }
-  }
-
-  render() {
-    const { next, total } = this.state;
-    return (
-      <div className="calc-grid">
-        <div className="output">
-          <div className="cur-operand">{ total && next ? next : total || next || 0 }</div>
-        </div>
-        <button onClick={this.doMathOperations} type="button">AC</button>
-        <button onClick={this.doMathOperations} type="button">+/-</button>
-        <button onClick={this.doMathOperations} type="button">%</button>
-        <button onClick={this.doMathOperations} type="button" className="orange">/</button>
-        <button onClick={this.doMathOperations} type="button">7</button>
-        <button onClick={this.doMathOperations} type="button">8</button>
-        <button onClick={this.doMathOperations} type="button">9</button>
-        <button onClick={this.doMathOperations} type="button" className="orange">x</button>
-        <button onClick={this.doMathOperations} type="button">4</button>
-        <button onClick={this.doMathOperations} type="button">5</button>
-        <button onClick={this.doMathOperations} type="button">6</button>
-        <button onClick={this.doMathOperations} type="button" className="orange">-</button>
-        <button onClick={this.doMathOperations} type="button">1</button>
-        <button onClick={this.doMathOperations} type="button">2</button>
-        <button onClick={this.doMathOperations} type="button">3</button>
-        <button onClick={this.doMathOperations} type="button" className="orange">+</button>
-        <button onClick={this.doMathOperations} type="button" className="span-two">0</button>
-        <button onClick={this.doMathOperations} type="button">.</button>
-        <button onClick={this.doMathOperations} type="button" className="orange">=</button>
+  };
+  const { next, total } = state;
+  return (
+    <div className="calc-grid">
+      <div className="output">
+        <div className="cur-operand">{ total && next ? next : total || next || 0 }</div>
       </div>
-    );
-  }
-}
+      {Buttons().map((row) => row.map((button) => (
+        <button
+          type="button"
+          key={button.name}
+          className={button.className}
+          onClick={(e) => doMathOperations(e)}
+        >
+          {button.name}
+        </button>
+      )))}
+    </div>
+  );
+};
 
 export default Calculator;
