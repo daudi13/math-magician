@@ -2,7 +2,7 @@
 
 Math magician is a website for all fans of mathematics. It is a single Page App that allows users to 
 
-[](./images/calculator.png)
+ ![](./images/calculator.png)
 
 - Make simple calculation
 - Read A random Math-related quote
