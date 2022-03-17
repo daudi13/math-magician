@@ -2,7 +2,7 @@
 
 Math magician is a website for all fans of mathematics. It is a single Page App that allows users to 
 
-[](%/calculator.png)
+[](./images/calculator.png)
 
 - Make simple calculation
 - Read A random Math-related quote
@@ -31,7 +31,7 @@ To get a local copy up and running follow the steps below
 - Run 'npm start' to start the live server
 
 ## Author
-David Ouma
+**David Ouma**
 - Github: [@daudi13](https://github.com/daudi13/)
 - Twitter: [@davouma](https://github.com/daudi13/)
 
