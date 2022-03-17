@@ -13,7 +13,7 @@ const Calculator = () => {
     const buttonName = btn.outerText;
     try {
       const object = calculate(state, buttonName);
-      setState({ ...object, ...state });
+      setState({ ...state, ...object });
     } catch (error) {
       const { next } = state;
 
