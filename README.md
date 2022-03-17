@@ -1,6 +1,6 @@
 # Math-Magician 
 
-Math magician is a website for all fans of mathematics. It is a single Page App that allows users to 
+Math Magicians is an SPA made for all fans of maths. It contains a calculator that allows the users to make the majority of arithmetic operations. In additions, it displays a random math related quote in each session.
 
  ![](./images/calculator.png)
 
