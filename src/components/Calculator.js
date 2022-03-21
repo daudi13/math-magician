@@ -21,7 +21,7 @@ const Calculator = () => {
       <div className="output">
         <div className="cur-operand">{ total && next ? next : total || next || 0 }</div>
       </div>
-      {Buttons().map((row) => row.map((button) => (
+      {Buttons().map((button) => (
         <button
           type="button"
           key={button.name}
@@ -30,7 +30,7 @@ const Calculator = () => {
         >
           {button.name}
         </button>
-      )))}
+      ))}
     </div>
   );
 };
