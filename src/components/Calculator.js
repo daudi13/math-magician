@@ -26,7 +26,7 @@ const Calculator = () => {
           type="button"
           key={button.name}
           className={button.className}
-          onClick={(e) => doMathOperations(e)}
+          onClick={doMathOperations}
         >
           {button.name}
         </button>
