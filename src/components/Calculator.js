@@ -11,19 +11,10 @@ const Calculator = () => {
 
   const doMathOperations = ({ currentTarget: btn }) => {
     const buttonName = btn.outerText;
-    try {
-      const object = calculate(state, buttonName);
-      setState({ ...state, ...object });
-    } catch (error) {
-      const { next } = state;
-
-      if (next) {
-        setState({ ...state, total: next, next: null });
-      }
-
-      setState({ operation: buttonName });
-    }
+    const object = calculate(state, buttonName);
+    setState({ ...state, ...object });
   };
+
   const { next, total } = state;
   return (
     <div className="calc-grid">
