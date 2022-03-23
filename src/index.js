@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './components/Home/Homepage';
 import Quotes from './components/quotes/Quotes';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
