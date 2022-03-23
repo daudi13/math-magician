@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/daudi13/math-magician/static/css/main.e80917a8.css",
+    "main.js": "/daudi13/math-magician/static/js/main.1f5db967.js",
+    "index.html": "/daudi13/math-magician/index.html",
+    "main.e80917a8.css.map": "/daudi13/math-magician/static/css/main.e80917a8.css.map",
+    "main.1f5db967.js.map": "/daudi13/math-magician/static/js/main.1f5db967.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e80917a8.css",
+    "static/js/main.1f5db967.js"
+  ]
+}
