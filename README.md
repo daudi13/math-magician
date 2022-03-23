@@ -13,7 +13,7 @@ Math Magicians is an SPA made for all fans of maths. It contains a calculator th
 - [x] Project 3: Events
 - [x] Project 4: Refactor with hooks(pair programming)
 - [x] Project 5: Full website.
-- [] Project 6: tests(pair programming)
+- [ ] Project 6: tests(pair programming)
 - [x] deploy
 
 ## Built with
