@@ -10,7 +10,6 @@ const Navbar = () => (
     |
     {' '}
     <Link to="Quotes">Quotes</Link>
-    <p>lorem</p>
   </nav>
 );
 

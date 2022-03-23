@@ -12,7 +12,7 @@ ReactDOM.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="/calculator" element={<App/>}/>
+        <Route path="/App" element={<App/>}/>
         <Route path="/Quotes" element={<Quotes/>}/>
       </Routes>
     </BrowserRouter>
