@@ -2,7 +2,7 @@
 
 Math Magicians is an SPA made for all fans of maths. It contains a calculator that allows the users to make the majority of arithmetic operations. In additions, it displays a random math related quote in each session.
 
- ![](./images/calculator.png)
+ ![](./images/chrome-capture-2022-2-23.png)
 
 - Make simple calculation
 - Read A random Math-related quote
@@ -12,9 +12,9 @@ Math Magicians is an SPA made for all fans of maths. It contains a calculator th
 - [x] Project 2: Components
 - [x] Project 3: Events
 - [x] Project 4: Refactor with hooks(pair programming)
-- [ ] Project 5: Full website.
-- [ ] Project 6: tests(pair programming)
-- [ ] deploy
+- [x] Project 5: Full website.
+- [x] Project 6: tests(pair programming)
+- [x] deploy
 
 ## Built with
 - React
