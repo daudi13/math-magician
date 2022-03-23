@@ -17,4 +17,9 @@ body {
   background-color: black;
   opacity: 0.8;
   width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
