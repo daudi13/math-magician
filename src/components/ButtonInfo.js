@@ -1,4 +1,4 @@
-function Buttons() {
+const Buttons = (props) => {
   const ButtonData = [
     { name: 'AC' },
     { name: '+/-' },
@@ -21,7 +21,9 @@ function Buttons() {
     { className: 'orange', name: '=' },
   ];
 
-  return ButtonData;
-}
+  return (
+    ButtonData.map((button) => <button type="button" onClick={() => props.checkOperation(button)} key={button.name} className={button.className}>{button.name}</button>)
+  );
+};
 
 export default Buttons;

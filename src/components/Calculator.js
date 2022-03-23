@@ -9,8 +9,8 @@ const Calculator = () => {
     operation: null,
   });
 
-  const doMathOperations = ({ currentTarget: btn }) => {
-    const buttonName = btn.outerText;
+  const doMathOperations = (btn) => {
+    const buttonName = btn.name;
     const object = calculate(state, buttonName);
     setState({ ...state, ...object });
   };
@@ -21,16 +21,7 @@ const Calculator = () => {
       <div className="output">
         <div className="cur-operand">{ total && next ? next : total || next || 0 }</div>
       </div>
-      {Buttons().map((button) => (
-        <button
-          type="button"
-          key={button.name}
-          className={button.className}
-          onClick={doMathOperations}
-        >
-          {button.name}
-        </button>
-      ))}
+      <Buttons checkOperation={doMathOperations} />
     </div>
   );
 };
