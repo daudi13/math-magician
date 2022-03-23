@@ -13,8 +13,9 @@ h1 {
   color: rgb(255, 196, 123);
 }
 
-h2 {
+.sub-title {
   margin-bottom: 15px;
+  text-decoration: underline;
 }
 
 p {

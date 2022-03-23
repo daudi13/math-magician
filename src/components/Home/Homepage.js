@@ -19,7 +19,7 @@ const paragraphs = [
 const HomePage = () => (
   <div className="wrapper">
     <h1>Welcome to the home of Mathematics</h1>
-    <h2>Mathematics</h2>
+    <h2 className="sub-title">Mathematics</h2>
     {paragraphs.map((paragraph) => (<p key={paragraph.id}>{paragraph.text}</p>))}
   </div>
 );
