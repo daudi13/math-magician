@@ -1,6 +1,6 @@
 # Math-Magician 
 
-Math Magicians is an SPA made for all fans of maths. It contains a calculator that allows the users to make the majority of arithmetic operations. In additions, it displays a random math related quote in each session.
+Math Magicians is an SPA made for all fans of maths. It contains a calculator that allows the users to make the majority of arithmetic operations. In additions, it displays a random math related quote in each session. view the project [here](https://daudi13.github.io/math-magician/)
 
  ![](./images/chrome-capture-2022-2-23.png)
 
