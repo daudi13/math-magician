@@ -67,5 +67,12 @@ button {
   .box {
     flex-direction: column;
     align-items: center;
+    margin: 10rem ;
+    padding: 0 10px;
+  }
+
+  .sub-two {
+    font-size: 29px;
+    text-align: center;
   }
 }
