@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Sigmar+One&family=Special+Elite&display=swap');
 
-.navBar {
+header {
   position: fixed;
   top: 0;
   right: 0;
@@ -20,24 +20,24 @@
 }
 
 .nav li + li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
-a {
-  color: black;
+.link-btn {
+  color: #fff;
   text-decoration: none;
   font-family: 'Special Elite', cursive;
   transition: all 0.5s ease;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-a:hover {
-  color: orange;
-  text-decoration: underline;
+.active {
+  color: black;
+  background-color: #fff;
 }
 
-a:active {
-  color: white;
-}
 
 .logo {
   color: orange;
