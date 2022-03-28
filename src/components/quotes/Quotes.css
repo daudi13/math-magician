@@ -1,0 +1,8 @@
+.quote-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+}

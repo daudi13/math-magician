@@ -1,4 +1,5 @@
 import React from 'react';
+import './Quotes.css';
 
 const Quotes = () => (
   <div className="quote-box">
