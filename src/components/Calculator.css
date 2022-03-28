@@ -1,0 +1,13 @@
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btns button {
+  height: 80px;
+  width: calc(100% / 4);
+}
+
+.btns > .span-two {
+  flex-basis: 50%;
+}

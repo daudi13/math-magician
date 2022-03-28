@@ -14,15 +14,11 @@
 }
 
 .calc-grid {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(4, 9rem);
-  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
-}
-
-.blackboard {
-  height: 300px;
-  width: 500px;
+  height: 500px;
+  width: 334px;
+  padding: 10px;
+  background-color: aquamarine;
+  border-radius: 10px;
 }
 
 .span-two {
@@ -35,12 +31,13 @@
 }
 
 .output {
-  grid-column: 1/-1;
   background-color: rgba(122, 122, 122, 0.75);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+  height: 80px;
+  border-radius: 8px 8px 0 0;
 }
 
 .output > .pre-operand {

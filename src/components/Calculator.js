@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 import Buttons from './ButtonInfo';
+import './Calculator.css';
 
 const Calculator = () => {
   const [state, setState] = useState({
@@ -21,7 +22,9 @@ const Calculator = () => {
       <div className="output">
         <div className="cur-operand">{ total && next ? next : total || next || 0 }</div>
       </div>
-      <Buttons checkOperation={doMathOperations} />
+      <div className="btns">
+        <Buttons checkOperation={doMathOperations} />
+      </div>
     </div>
   );
 };
