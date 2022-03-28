@@ -46,3 +46,14 @@ header {
   line-height: 1.5;
   text-shadow: 1px 2px black;
 }
+
+@media (max-width: 750px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  header > * + * {
+    margin-top: 15px;
+  }
+}
